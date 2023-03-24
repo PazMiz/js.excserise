@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    
+</head>
+
+<body>
+
+    <input id="number">
+
+    <button onclick="test()">test</button>
+    <script>
+
+
+        function test() {
+            if (number.value <= 10){
+                console.log(number.value);
+                if(number.value == 2)
+                    document.body.style.backgroundColor = "red";
+                if(number.value == 3)
+                    document.body.style.backgroundColor = "green";
+                if(number.value == 4)
+                    document.body.style.backgroundColor = "blue";
+
+                
+               
+            }
+            // אם הוא בין ל11 ו20 להדפיס אותו פעמיים    
+            if (number.value >= 11 && number.value < 20) {
+                console.log(number.value);
+                console.log(number.value);
+            }
+            // אם הוא בין 20 ל 30 להדפיס את השם
+            if (number.value >= 20 && number.value < 30)
+                console.log('paz');
+
+            // אם הוא בין ל30 ו40 להכפיל אותו בארבע 
+            if (number.value >= 30 && number.value < 40)
+                console.log(number.value * 4);
+            // אם הוא בין 40 ל50 להוסיף לו 200
+            if (number.value >= 40 && number.value < 50)
+                console.log(parseInt(number.value) + 200);
+
+
+            
+        }
+
+    </script>
+</body>
+
+</html>
